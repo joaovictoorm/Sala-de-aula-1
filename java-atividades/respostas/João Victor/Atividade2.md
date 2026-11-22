@@ -1,0 +1,53 @@
+# Atividade 1 — Cadastro Aluno
+```java
+public class Aluno {
+
+    // Atributos
+    String nome;
+    int idade;
+    String curso;
+    int matricula;
+
+    // Método para exibir os dados
+    public void exibirDados() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Curso: " + curso);
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("-------------------------");
+    }
+}
+```
+# Codigo Main
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        // Primeiro aluno
+        Aluno aluno1 = new Aluno();
+        aluno1.nome = "João";
+        aluno1.idade = 19;
+        aluno1.curso = "ADS";
+        aluno1.matricula = 2201;
+
+        // Segundo aluno
+        Aluno aluno2 = new Aluno();
+        aluno2.nome = "Fernanda";
+        aluno2.idade = 20;
+        aluno2.curso = "Ciencias de Dados";
+        aluno2.matricula = 1812;
+
+        // Terceiro aluno
+        Aluno aluno3 = new Aluno();
+        aluno3.nome = "Vinicius";
+        aluno3.idade = 22;
+        aluno3.curso = "Ciência da Computação";
+        aluno3.matricula = 10808;
+
+        // Exibindo os dados
+        aluno1.exibirDados();
+        aluno2.exibirDados();
+        aluno3.exibirDados();
+    }
+}
+```
